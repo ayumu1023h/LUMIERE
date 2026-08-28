@@ -1,0 +1,167 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f8f6f3;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+}
+
+header h1{
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hero{
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #e8e1d9;
+}
+
+.hero h2{
+    margin: 0 0 20px;
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+.hero p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.concept{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.concept h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.concept p{
+    margin: 8px 0;
+    line-height: 1.8;
+}
+
+.menu{
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.menu h2{
+    margin-bottom: 50px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item{
+    width: 220px;
+    padding: 30px 20px;
+    background-color: #f8f6f3;
+}
+
+.menu-item h3{
+    margin: 0 0 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.menu-item {
+    margin: 0;
+    font-size: 16px;
+}
+
+.access{
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #e8e1d9;
+}
+
+.access h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.access p{
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+footer{
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p{
+    margin: 0;
+    font-size: 13px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero{
+        padding: 80px 20px;
+    }
+
+    .hero h2{
+        font-size: 30px;
+    }
+}
