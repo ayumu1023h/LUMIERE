@@ -13,6 +13,10 @@ header{
     align-items: center;
     padding: 20px 60px;
     background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0 ,0, 0.08);
 }
 
 header h1{
@@ -36,6 +40,10 @@ nav a{
     letter-spacing: 2px;
 }
 
+nav a:hover{
+    opacity: 0.6;
+}
+
 .hero{
     text-align: center;
     padding: 120px 20px;
@@ -46,16 +54,18 @@ nav a{
     margin: 0 0 20px;
     font-size: 42px;
     letter-spacing: 4px;
+    color: #fff;
 }
 
 .hero p{
     margin: 0;
     font-size: 16px;
     line-height: 1.8;
+    color: #fff;
 }
 
 .concept{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 100px 20px;
     text-align: center;
@@ -107,25 +117,38 @@ nav a{
 
 .menu-item{
     width: 220px;
-    padding: 30px 20px;
+    padding: 0 0 30px;
     background-color: #f8f6f3;
     transition:0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0 ,0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .menu-item:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
 }
 
 .menu-item h3{
     margin: 0 0 15px;
     font-size: 20px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .menu-item p {
     margin: 0;
     font-size: 16px;
+    text-align: center;
 }
+
+.menu-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    }
 
 .access{
     padding: 100px 20px;
@@ -144,6 +167,14 @@ nav a{
     line-height: 1.8;
 }
 
+.access-info{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0 ,0, 0.08);
+}
 footer{
     padding: 25px 20px;
     text-align: center;
@@ -156,7 +187,33 @@ footer p{
     font-size: 13px;
 }
 
+.hero{
+    position: relative;
+    padding: 0;
+}
 
+.hero img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+     z-index: 1;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
 
 
 @media(max-width:768px){
@@ -180,6 +237,10 @@ footer p{
         max-width: 300px;
     }
 
+    .menu-item img{
+        height: 200px;
+    }
+
     .hero{
         padding: 80px 20px;
     }
@@ -200,4 +261,12 @@ footer p{
         width: 100%;
         text-align: center;
     }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 80px;
 }
