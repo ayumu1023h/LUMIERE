@@ -175,6 +175,11 @@ nav a:hover{
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0 ,0, 0.08);
 }
+
+.access-info a{
+    color: #333;
+    text-decoration: none;
+}
 footer{
     padding: 25px 20px;
     text-align: center;
@@ -241,10 +246,6 @@ footer p{
         height: 200px;
     }
 
-    .hero{
-        padding: 80px 20px;
-    }
-
     .hero h2{
         font-size: 30px;
     }
@@ -261,6 +262,14 @@ footer p{
         width: 100%;
         text-align: center;
     }
+
+    .reservation{
+        padding: 70px 20px;
+    }
+
+    .reservation form{
+        width: 100%;
+    }
 }
 
 html{
@@ -269,4 +278,92 @@ html{
 
 section{
     scroll-margin-top: 80px;
+}
+
+.map-button{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.map-button:hover{
+    opacity: 0.7;
+}
+
+.access-info .map-button{
+    color: white;
+}
+
+.reserve-button{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8b6f5a;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.reserve-button:hover{
+    opacity: 0.7;
+}
+
+.menu-item:hover img{
+    transform: scale(1.05);
+}
+
+.reservation{
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f8f6f3;
+}
+
+.reservation form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.reservation label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.reservation input,
+.reservation select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.reservation button{
+    margin-top: 30px;
+    padding: 12px 40px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reservation button:hover{
+    opacity: 0.7;
+}
+
+.reservation input:focus,
+.reservationselect:focus{
+    outline: none;
+    border-color: #8b6f5a;
+}
+
+.reservation button:active{
+    transform: scale(0.95);
 }
